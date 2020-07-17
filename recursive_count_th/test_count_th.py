@@ -7,26 +7,31 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.word = ""
 
+    # SUCCESS
     def test_count_th_empty(self):
         self.word = ""
         count = count_th(self.word)
         self.assertEqual(0, count)
 
+    # SUCCESS
     def test_count_th_single(self):
         self.word = "abcthxyz"
         count = count_th(self.word)
         self.assertEqual(1, count)
     
+    # SUCCESS
     def test_count_th_multiple(self):
         self.word = "abcthefthghith"
         count = count_th(self.word)
         self.assertEqual(3, count)
 
+    # SUCCESS
     def test_count_backwards(self):
         self.word = "thhtthht"
         count = count_th(self.word)
         self.assertEqual(2, count)
 
+    # SUCCESS
     def test_count_th_mixedcase(self):
         self.word = "THtHThth"
         count = count_th(self.word)
