@@ -19,3 +19,19 @@ def count_th(word):
             count += 1
 
     return count
+
+
+# RECURSIVE COUNT_TH FUNCTION ——
+# I tried this after I hit the entire sprint challenge's MVP.
+# Doesn't work. :(
+
+#def count_th(word, window_val=0, count=0):
+#    try:
+#        window = word[window_val:window_val+1]
+#    except:
+#        return count
+
+#    if window == 'th':
+#        count += 1
+
+#    return count_th(word= word, window_val= window_val + 1, count= count)
